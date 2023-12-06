@@ -115,6 +115,7 @@
             tb_anoFab.Name = "tb_anoFab";
             tb_anoFab.Size = new Size(150, 23);
             tb_anoFab.TabIndex = 6;
+            tb_anoFab.TextChanged += tb_anoFab_TextChanged;
             tb_anoFab.KeyPress += tb_anoFab_KeyPress;
             // 
             // tb_anoMod
@@ -125,6 +126,7 @@
             tb_anoMod.Name = "tb_anoMod";
             tb_anoMod.Size = new Size(150, 23);
             tb_anoMod.TabIndex = 7;
+            tb_anoMod.TextChanged += tb_anoMod_TextChanged;
             tb_anoMod.KeyPress += tb_anoMod_KeyPress;
             // 
             // tb_numeroPort

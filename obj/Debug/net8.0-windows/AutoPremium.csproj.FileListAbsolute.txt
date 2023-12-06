@@ -34,3 +34,4 @@ C:\Users\Gabriel\source\repos\AutoPremium\obj\Debug\net8.0-windows\AutoPremium.T
 C:\Users\Gabriel\source\repos\AutoPremium\obj\Debug\net8.0-windows\AutoPremium.Telas.InfTecnicas.resources
 C:\Users\Gabriel\source\repos\AutoPremium\obj\Debug\net8.0-windows\AutoPremium.csproj.CopyComplete
 C:\Users\Gabriel\source\repos\AutoPremium\obj\Debug\net8.0-windows\AutoPremium.Telas.Consultar.resources
+C:\Users\Gabriel\source\repos\AutoPremium\obj\Debug\net8.0-windows\AutoPremium.sourcelink.json

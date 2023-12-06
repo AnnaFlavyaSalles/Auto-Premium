@@ -67,5 +67,12 @@ namespace AutoPremium.Telas
                 }
             }
         }
+
+        private void botao_cadastrar_Click(object sender, EventArgs e)
+        {
+            InfGerais cadastro = new InfGerais();
+            this.Dispose();
+            cadastro.Show();
+        }
     }
 }

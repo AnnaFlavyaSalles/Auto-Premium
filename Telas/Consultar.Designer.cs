@@ -53,6 +53,7 @@
             botao_cadastrar.Size = new Size(134, 43);
             botao_cadastrar.TabIndex = 3;
             botao_cadastrar.UseVisualStyleBackColor = true;
+            botao_cadastrar.Click += botao_cadastrar_Click;
             // 
             // botao_voltar
             // 

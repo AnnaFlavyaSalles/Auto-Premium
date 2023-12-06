@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace AutoPremium.Telas
 {
@@ -142,6 +143,26 @@ namespace AutoPremium.Telas
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
+            }
+        }
+
+        private void tb_anoFab_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_anoFab.Text.Length > 4)
+            {
+                tb_anoFab.Text = tb_anoFab.Text.Substring(0, 4);
+                tb_anoFab.SelectionStart = 4;
+                tb_anoFab.SelectionLength = 0;
+            }
+        }
+
+        private void tb_anoMod_TextChanged(object sender, EventArgs e)
+        {
+            if (tb_anoMod.Text.Length > 4)
+            {
+                tb_anoMod.Text = tb_anoMod.Text.Substring(0, 4);
+                tb_anoMod.SelectionStart = 4;
+                tb_anoMod.SelectionLength = 0;
             }
         }
     }
