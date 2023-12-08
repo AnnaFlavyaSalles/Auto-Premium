@@ -47,12 +47,12 @@ namespace AutoPremium.Telas
 
         private void Consultar_Load(object sender, EventArgs e)
         {
-            using (var conexao = new MySqlConnection("server=localhost;uid=root;pwd=root;database=auto_premium_bd"))
+            using (var conexao = new MySqlConnection("server=localhost;uid=root;pwd=root;database=recuperacao_po2_bd"))
             {
                 try
                 {
                     conexao.Open();
-                    string query = "SELECT * FROM veiculo";
+                    string query = "select * from carro";
                     using (var comando = new MySqlDataAdapter(query, conexao))
                     {
                         DataTable dt = new DataTable();
@@ -62,7 +62,7 @@ namespace AutoPremium.Telas
                 }
                 catch (Exception)
                 {
-
+                    MessageBox.Show("Erro ao conectar com o banco de dados!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     throw;
                 }
             }
